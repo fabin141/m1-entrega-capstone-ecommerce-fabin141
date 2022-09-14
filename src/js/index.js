@@ -1,4 +1,3 @@
-import {data} from "./database.js"
 const ul = document.querySelector('.lista')
 function insereCard() {
     for(let i = 0; i < data.length; i++) {        
@@ -93,14 +92,14 @@ function carrinho(){
         precoTotal.innerHTML = `R$ ${precoResumo}.00`
         console.log(addCart)
 
-        const primeRemover = caracteristicas.parentNode
+        const paiRemover = caracteristicas.parentNode
         
-        primeRemover.addEventListener("click", () => {
-            console.log(primeRemover.id)
-            ulCart.removeChild(primeRemover)
+        paiRemover.addEventListener("click", () => {
+            console.log(paiRemover.id)
+            ulCart.removeChild(paiRemover)
             contador--
             quantidadeTotal.textContent = contador
-            precoResumo -= data[primeRemover.id - 1].value
+            precoResumo -= data[paiRemover.id - 1].value
             precoTotal.textContent = `R$ ${precoResumo}.00`
             console.log(event.target)
         })     
