@@ -163,14 +163,7 @@ aside {
     height: 50px;
     padding: 10px;
 }
-.carrinho-de-produtos .off-itens {
-    display: flex;
-    flex-direction: column;
-    height: 214px;
-    background: #F5F5F5;
-    align-items: center;
-    justify-content: center;
-}
+
 .on-itens {
     display: flex;
     flex-direction: column;
